@@ -1,0 +1,14 @@
+Options -Indexes -MultiViews
+Allow From All  
+
+RewriteEngine on
+
+#  redirects
+RewriteCond %{ENV:REDIRECT_STATUS} 200
+RewriteRule ^ - [L]
+
+RewriteRule ^rest/(.*)$ cache.php/$1 [L]
+RewriteRule ^callback/(.*)$ callback.php/$1 [L]
+RewriteRule ^push$ push.php [L]
+
+# Deny From All

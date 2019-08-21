@@ -1,0 +1,24 @@
+{
+    "name": "gastroafisha/informer-backend2",
+    "description": "Backend for informer",
+    "authors": [
+        {
+            "name": "alex",
+            "email": "your@email.here"
+        }
+    ],
+
+    "require": {
+        "doctrine/orm": "2.6.*",
+        "phpmailer/phpmailer": "*",
+        "facebook/graph-sdk": "*",
+        "wrep/notificato": "*",
+        "sngrl/php-firebase-cloud-messaging": "dev-master"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Informer\\": "src/"
+        }
+    }
+}
